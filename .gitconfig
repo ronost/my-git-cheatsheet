@@ -1,13 +1,13 @@
 [user]
-	email = ronost81@gmail.com
-	name = ronny
+    email = ronost81@gmail.com
+    name = ronny
 [core]
-	editor = vim
+    editor = vim
 [alias]
-	glog = log --oneline --graph
+    glog = log --oneline --graph
     flog = log -p
     stat = status -s
     ci = commit -v -a
     redo = commit --amend
 [commit]
-	template = ~/.gitmessage
+    template = ~/.gitmessage
