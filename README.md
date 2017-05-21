@@ -15,3 +15,13 @@ git add .gitignore
 
 git commit . -m "Add public key to repository"
 ```
+
+# Undo hard reset example:
+Hard reset latest commit by:
+```bash
+git reset --hard HEAD^
+```
+To undo hard reset (check reflog for index):
+```bash
+git reset --hard HEAD@{1}
+```
