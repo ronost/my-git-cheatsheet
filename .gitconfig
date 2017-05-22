@@ -4,10 +4,12 @@
 [core]
     editor = vim
 [alias]
-    glog = log --oneline --graph
+    glog = log --oneline --graph --decorate
     flog = log -p
     stat = status -s
     ci = commit -v -a
     redo = commit --amend
 [commit]
     template = ~/.gitmessage
+[push]
+    default = simple
