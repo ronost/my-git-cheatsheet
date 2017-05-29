@@ -25,3 +25,9 @@ To undo hard reset (check reflog for index):
 ```bash
 git reset --hard HEAD@{1}
 ```
+
+# Squash commits made since branching:
+Squash commits made on branch1 since branching from master:
+```bash
+git rebase -i $(git merge-base branch1 master)
+```
