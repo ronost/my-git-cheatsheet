@@ -31,3 +31,20 @@ Squash commits made on branch1 since branching from master:
 ```bash
 git rebase -i $(git merge-base branch1 master)
 ```
+
+# Rebase n commits from feature1 to master
+```bash
+git checkout feature1
+git rebase master
+git checkout master
+git merge feature1
+```
+
+# Rebase and squash n commits from feature1 to master
+```bash
+git checkout feature1
+git rebase -i master
+# pick, squash.. etc
+git checkout master
+git merge feature1
+```
