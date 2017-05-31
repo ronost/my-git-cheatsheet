@@ -48,3 +48,15 @@ git rebase -i master
 git checkout master
 git merge feature1
 ```
+
+# Delete branch remotly and locally
+```bash
+git branch -d branch1
+git push origin --delete branch1
+```
+
+Update other clones:
+```bash
+git fetch --all --prune
+```
+
