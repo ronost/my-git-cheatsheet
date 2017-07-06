@@ -49,7 +49,13 @@ git checkout master
 git merge feature1
 ```
 
-# Delete branch remotly and locally
+# Create branch remotely and locally
+```bash
+git checkout -b branch1
+git push -u origin branch1
+```
+
+# Delete branch remotely and locally
 ```bash
 git branch -d branch1
 git push origin --delete branch1
