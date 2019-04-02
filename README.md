@@ -66,3 +66,15 @@ Update other clones:
 git fetch --all --prune
 ```
 
+# Amend to previous commits
+E.g: Add something to HEAD^^ 
+```bash
+git rebase -i HEAD^^
+```
+Mark commit as "edit".
+Save.
+Make changes.
+```bash
+git commit --amend
+git rebase --continue
+```
